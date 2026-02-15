@@ -5,112 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lovely-congrats</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<style>
-    .text2 {
-        font-size: 30px;
-        color: #de8157;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-top: 20px;
-    }
-
-    .grid button {
-        background-color: #ffc7ba;
-        color: #de8157;
-        padding: 10px;
-        border: 2px solid #de8157;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 18px;
-    }
-    .grid button:hover{
-            transform: translateY(-1px) scale(1.05);
-            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
-    }
-    body {
-        text-align: center;
-        align-items: center;
-        background-color: #ffffff;
-        font-family: Arial, sans-serif;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;   
-    }
-
-    .text1 {
-        font-size: 30px;
-        color: #2a7b90;
-    }
-
-    .text3 {
-        font-size: 15px;
-        color: #ffc7ba;
-    }
-
-    .text4 {
-        font-size: 30px;
-        color: #de8157;
-    }
-
-    .text5 {
-        font-size: 30px;
-        color: #ffc7ba;
-    }
-
-    .button {
-        background-color: #b1dbd7;
-        color: #2a7b90;
-        padding: 20px 75px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-
-    .button:hover{
-        background-color: var(--color-env2);
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
-    }
-
-    .last-button {
-        background-color: #de8157;
-        color: white;
-        padding: 10px 185px;
-        margin: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 25px;
-    }
-    .last-button:hover{
-            transform: translateY(-1px) scale(1.05);
-            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
-    }
-    .pressed-button {
-        background-color: white;
-        color: #de8157;
-        padding: 20px 40px;
-        margin: 0 10px;
-        border: 3px solid #ffc7ba;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .image-container {
-        margin-top: 20px;
-    }
-</style>
 
 <body>
     <div class="image-container">
@@ -118,52 +14,53 @@
             src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdndyZTc3aTQyaWd6cWU5M3Uzc3M2eTI1ODluZWNhdjB1ZWRlYTVnaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tshmvVDvKNmaXZ2fCN/giphy.gif"
             alt="love 2gether">
     </div>
-    <div class="text2">𝑰 𝒘𝒐𝒖𝒍𝒅 𝒍𝒊𝒌𝒆 𝒕𝒐 𝒔𝒂𝒚 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆...</div>
+    <div class="text2">I would like to say that you are...</div>
     <div class="grid" id="buttonsGrid">
-        <button onclick="selectAttribute('charming')">𝒄𝒉𝒂𝒓𝒎𝒊𝒏𝒈</button>
-        <button onclick="selectAttribute('attractive')">𝒂𝒕𝒕𝒓𝒂𝒄𝒕𝒊𝒗𝒆</button>
-        <button onclick="selectAttribute('caring')">𝒄𝒂𝒓𝒊𝒏𝒈</button>
-        <button onclick="selectAttribute('athletic')">𝒂𝒕𝒉𝒍𝒆𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('loyal')">𝒍𝒐𝒚𝒂𝒍</button>
-        <button onclick="selectAttribute('sencere')">𝒔𝒆𝒏𝒄𝒆𝒓𝒆</button>
-        <button onclick="selectAttribute('cute')">𝒄𝒖𝒕𝒆</button>
-        <button onclick="selectAttribute('magnetic')">𝒎𝒂𝒈𝒏𝒆𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('unique')">𝒖𝒏𝒊𝒒𝒖𝒆</button>
-        <button onclick="selectAttribute('smart')">𝒔𝒎𝒂𝒓𝒕</button>
-        <button onclick="selectAttribute('funny')">𝒇𝒖𝒏𝒏𝒚</button>
-        <button onclick="selectAttribute('honest')">𝒉𝒐𝒏𝒆𝒔𝒕</button>
-        <button onclick="selectAttribute('friendly')">𝒇𝒓𝒊𝒆𝒏𝒅𝒍𝒚</button>
-        <button onclick="selectAttribute('understanding')">𝒖𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈</button>
-        <button onclick="selectAttribute('passionate')">𝒑𝒂𝒔𝒔𝒊𝒐𝒏𝒂𝒕𝒆</button>
-        <button onclick="selectAttribute('supportive')">𝒔𝒖𝒑𝒑𝒐𝒓𝒕𝒊𝒗𝒆</button>
-        <button onclick="selectAttribute('respectful')">𝒓𝒆𝒔𝒑𝒆𝒄𝒕𝒇𝒖𝒍</button>
-        <button onclick="selectAttribute('comforting')">𝒄𝒐𝒎𝒇𝒐𝒓𝒕𝒊𝒏𝒈</button>
-        <button onclick="selectAttribute('lovely')">𝒍𝒐𝒗𝒆𝒍𝒚</button>
-        <button onclick="selectAttribute('inspiring')">𝒊𝒏𝒔𝒑𝒊𝒓𝒊𝒏𝒈</button>
-        <button onclick="selectAttribute('polite')">𝒑𝒐𝒍𝒊𝒕𝒆</button>
-        <button onclick="selectAttribute('grateful')">𝒈𝒓𝒂𝒕𝒆𝒇𝒖𝒍</button>
-        <button onclick="selectAttribute('intelligent')">𝒊𝒏𝒕𝒆𝒍𝒍𝒊𝒈𝒆𝒏𝒕</button>
-        <button onclick="selectAttribute('charismatic')">𝒄𝒉𝒂𝒓𝒊𝒔𝒎𝒂𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('talented')">𝒕𝒂𝒍𝒆𝒏𝒕𝒆𝒅</button>
-        <button onclick="selectAttribute('energetic')">𝒆𝒏𝒆𝒓𝒈𝒆𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('empathetic')">𝒆𝒎𝒑𝒂𝒕𝒉𝒆𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('patient')">𝒑𝒂𝒕𝒊𝒆𝒏𝒕</button>
-        <button onclick="selectAttribute('handsome')">𝒉𝒂𝒏𝒅𝒔𝒐𝒎𝒆</button>
-        <button onclick="selectAttribute('kind')">𝒌𝒊𝒏𝒅-𝒉𝒆𝒂𝒓𝒕𝒆𝒅</button>
-        <button onclick="selectAttribute('enthusiastic')">𝒆𝒏𝒕𝒉𝒖𝒔𝒊𝒂𝒔𝒕𝒊𝒄</button>
-        <button onclick="selectAttribute('wise')">𝒘𝒊𝒔𝒆</button>
-        <button onclick="selectAttribute('trustworthy')">𝒕𝒓𝒖𝒔𝒕𝒘𝒐𝒓𝒕𝒉𝒚</button>
-        <button onclick="selectAttribute('thoughtful')">𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒇𝒖𝒍</button>
-        <button onclick="selectAttribute('brilliant')">𝒃𝒓𝒊𝒍𝒍𝒊𝒂𝒏𝒕</button>
-        <button onclick="selectAttribute('tolerant')">𝒕𝒐𝒍𝒆𝒓𝒂𝒏𝒕</button>
-
+        <button onclick="selectAttribute('charming')">charming</button>
+        <button onclick="selectAttribute('attractive')">attractive</button>
+        <button onclick="selectAttribute('caring')">caring</button>
+        <button onclick="selectAttribute('athletic')">athletic</button>
+        <button onclick="selectAttribute('loyal')">loyal</button>
+        <button onclick="selectAttribute('sencere')">sencere</button>
+        <button onclick="selectAttribute('cute')">cute</button>
+        <button onclick="selectAttribute('magnetic')">magnetic</button>
+        <button onclick="selectAttribute('unique')">unique</button>
+        <button onclick="selectAttribute('smart')">smart</button>
+        <button onclick="selectAttribute('funny')">funny</button>
+        <button onclick="selectAttribute('honest')">honest</button>
+        <button onclick="selectAttribute('friendly')">friendly</button>
+        <button onclick="selectAttribute('understanding')">understanding</button>
+        <button onclick="selectAttribute('passionate')">passionate</button>
+        <button onclick="selectAttribute('supportive')">supportive</button>
+        <button onclick="selectAttribute('respectful')">respectful</button>
+        <button onclick="selectAttribute('comforting')">comforting</button>
+        <button onclick="selectAttribute('lovely')">lovely</button>
+        <button onclick="selectAttribute('inspiring')">inspiring</button>
+        <button onclick="selectAttribute('polite')">polite</button>
+        <button onclick="selectAttribute('grateful')">grateful</button>
+        <button onclick="selectAttribute('intelligent')">intelligent</button>
+        <button onclick="selectAttribute('charismatic')">charismatic</button>
+        <button onclick="selectAttribute('talented')">talented</button>
+        <button onclick="selectAttribute('energetic')">energetic</button>
+        <button onclick="selectAttribute('empathetic')">empathetic</button>
+        <button onclick="selectAttribute('patient')">patient</button>
+        <button onclick="selectAttribute('handsome')">handsome</button>
+        <button onclick="selectAttribute('kind')">kind-hearted</button>
+        <button onclick="selectAttribute('enthusiastic')">enthusiastic</button>
+        <button onclick="selectAttribute('wise')">wise</button>
+        <button onclick="selectAttribute('trustworthy')">trustworthy</button>
+        <button onclick="selectAttribute('thoughtful')">thoughtful</button>
+        <button onclick="selectAttribute('brilliant')">brilliant</button>
+        <button onclick="selectAttribute('tolerant')">tolerant</button>
     </div>
-    <a href="anni_3.html"> <button class="last-button"> 𝑳𝒐𝒗𝒆 𝒚𝒐𝒖!!!</button></a>
+    <a href="p3.html" class="last-button">Love you!!!</a>
+    
     <script>
-        function nextStep() {
 
+        function nextStep() {
             document.getElementById('buttonsGrid').style.display = 'grid';
         }
+
         function selectAttribute(attribute) {
             let images = {
                 charming:

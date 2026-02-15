@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text1 {
+    font-size: 40px;
+    color: #2a7b90;
+}
+
+.text2 {
+    font-size: 40px;
+    color: #de8157;
+}
+
+.text3 {
+    font-size: 15px;
+    color: #ffc7ba;
+}
+
+.text4 {
+    font-size: 30px;
+    color: #de8157;
+}
+
+.text5 {
+    font-size: 30px;
+    color: #ffc7ba;
+}
+
+.blue-button {
+    background-color: #b1dbd7;
+    color: #2a7b90;
+    padding: 20px 75px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.pink-button {
+    background-color: #ffc7ba;
+    color: #de8157;
+    padding: 20px 40px;
+    margin: 0 10px;
+    border: 3px solid #ffc7ba;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.last-button {
+    background-color: #de8157;
+    color: white;
+    padding: 20px 330px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.last-buttosn:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pressed-button {
+    background-color: white;
+    color: #de8157;
+    padding: 20px 40px;
+    margin: 0 10px;
+    border: 3px solid #ffc7ba;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid button {
+    background-color: #ffc7ba;
+    color: #de8157;
+    padding: 10px;
+    border: 2px solid #de8157;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.grid button:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
