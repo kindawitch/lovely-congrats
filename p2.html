@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lovely-congrats</title>
+</head>
+<style>
+    .text2 {
+        font-size: 30px;
+        color: #de8157;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .grid button {
+        background-color: #ffc7ba;
+        color: #de8157;
+        padding: 10px;
+        border: 2px solid #de8157;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .grid button:hover{
+            transform: translateY(-1px) scale(1.05);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    }
+    body {
+        text-align: center;
+        align-items: center;
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .text1 {
+        font-size: 30px;
+        color: #2a7b90;
+    }
+
+    .text3 {
+        font-size: 15px;
+        color: #ffc7ba;
+    }
+
+    .text4 {
+        font-size: 30px;
+        color: #de8157;
+    }
+
+    .text5 {
+        font-size: 30px;
+        color: #ffc7ba;
+    }
+
+    .button {
+        background-color: #b1dbd7;
+        color: #2a7b90;
+        padding: 20px 75px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .button:hover{
+        background-color: var(--color-env2);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    }
+
+    .last-button {
+        background-color: #de8157;
+        color: white;
+        padding: 10px 185px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .last-button:hover{
+            transform: translateY(-1px) scale(1.05);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+    }
+    .pressed-button {
+        background-color: white;
+        color: #de8157;
+        padding: 20px 40px;
+        margin: 0 10px;
+        border: 3px solid #ffc7ba;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="image-container">
+        <img id="gifImage2"
+            src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdndyZTc3aTQyaWd6cWU5M3Uzc3M2eTI1ODluZWNhdjB1ZWRlYTVnaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tshmvVDvKNmaXZ2fCN/giphy.gif"
+            alt="love 2gether">
+    </div>
+    <div class="text2">𝑰 𝒘𝒐𝒖𝒍𝒅 𝒍𝒊𝒌𝒆 𝒕𝒐 𝒔𝒂𝒚 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒂𝒓𝒆...</div>
+    <div class="grid" id="buttonsGrid">
+        <button onclick="selectAttribute('charming')">𝒄𝒉𝒂𝒓𝒎𝒊𝒏𝒈</button>
+        <button onclick="selectAttribute('attractive')">𝒂𝒕𝒕𝒓𝒂𝒄𝒕𝒊𝒗𝒆</button>
+        <button onclick="selectAttribute('caring')">𝒄𝒂𝒓𝒊𝒏𝒈</button>
+        <button onclick="selectAttribute('athletic')">𝒂𝒕𝒉𝒍𝒆𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('loyal')">𝒍𝒐𝒚𝒂𝒍</button>
+        <button onclick="selectAttribute('sencere')">𝒔𝒆𝒏𝒄𝒆𝒓𝒆</button>
+        <button onclick="selectAttribute('cute')">𝒄𝒖𝒕𝒆</button>
+        <button onclick="selectAttribute('magnetic')">𝒎𝒂𝒈𝒏𝒆𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('unique')">𝒖𝒏𝒊𝒒𝒖𝒆</button>
+        <button onclick="selectAttribute('smart')">𝒔𝒎𝒂𝒓𝒕</button>
+        <button onclick="selectAttribute('funny')">𝒇𝒖𝒏𝒏𝒚</button>
+        <button onclick="selectAttribute('honest')">𝒉𝒐𝒏𝒆𝒔𝒕</button>
+        <button onclick="selectAttribute('friendly')">𝒇𝒓𝒊𝒆𝒏𝒅𝒍𝒚</button>
+        <button onclick="selectAttribute('understanding')">𝒖𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈</button>
+        <button onclick="selectAttribute('passionate')">𝒑𝒂𝒔𝒔𝒊𝒐𝒏𝒂𝒕𝒆</button>
+        <button onclick="selectAttribute('supportive')">𝒔𝒖𝒑𝒑𝒐𝒓𝒕𝒊𝒗𝒆</button>
+        <button onclick="selectAttribute('respectful')">𝒓𝒆𝒔𝒑𝒆𝒄𝒕𝒇𝒖𝒍</button>
+        <button onclick="selectAttribute('comforting')">𝒄𝒐𝒎𝒇𝒐𝒓𝒕𝒊𝒏𝒈</button>
+        <button onclick="selectAttribute('lovely')">𝒍𝒐𝒗𝒆𝒍𝒚</button>
+        <button onclick="selectAttribute('inspiring')">𝒊𝒏𝒔𝒑𝒊𝒓𝒊𝒏𝒈</button>
+        <button onclick="selectAttribute('polite')">𝒑𝒐𝒍𝒊𝒕𝒆</button>
+        <button onclick="selectAttribute('grateful')">𝒈𝒓𝒂𝒕𝒆𝒇𝒖𝒍</button>
+        <button onclick="selectAttribute('intelligent')">𝒊𝒏𝒕𝒆𝒍𝒍𝒊𝒈𝒆𝒏𝒕</button>
+        <button onclick="selectAttribute('charismatic')">𝒄𝒉𝒂𝒓𝒊𝒔𝒎𝒂𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('talented')">𝒕𝒂𝒍𝒆𝒏𝒕𝒆𝒅</button>
+        <button onclick="selectAttribute('energetic')">𝒆𝒏𝒆𝒓𝒈𝒆𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('empathetic')">𝒆𝒎𝒑𝒂𝒕𝒉𝒆𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('patient')">𝒑𝒂𝒕𝒊𝒆𝒏𝒕</button>
+        <button onclick="selectAttribute('handsome')">𝒉𝒂𝒏𝒅𝒔𝒐𝒎𝒆</button>
+        <button onclick="selectAttribute('kind')">𝒌𝒊𝒏𝒅-𝒉𝒆𝒂𝒓𝒕𝒆𝒅</button>
+        <button onclick="selectAttribute('enthusiastic')">𝒆𝒏𝒕𝒉𝒖𝒔𝒊𝒂𝒔𝒕𝒊𝒄</button>
+        <button onclick="selectAttribute('wise')">𝒘𝒊𝒔𝒆</button>
+        <button onclick="selectAttribute('trustworthy')">𝒕𝒓𝒖𝒔𝒕𝒘𝒐𝒓𝒕𝒉𝒚</button>
+        <button onclick="selectAttribute('thoughtful')">𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒇𝒖𝒍</button>
+        <button onclick="selectAttribute('brilliant')">𝒃𝒓𝒊𝒍𝒍𝒊𝒂𝒏𝒕</button>
+        <button onclick="selectAttribute('tolerant')">𝒕𝒐𝒍𝒆𝒓𝒂𝒏𝒕</button>
+
+    </div>
+    <a href="anni_3.html"> <button class="last-button"> 𝑳𝒐𝒗𝒆 𝒚𝒐𝒖!!!</button></a>
+    <script>
+        function nextStep() {
+
+            document.getElementById('buttonsGrid').style.display = 'grid';
+        }
+        function selectAttribute(attribute) {
+            let images = {
+                charming:
+                    "https://media.giphy.com/media/YO0zXMgEF0QwxUoa7E/giphy.gif?cid=ecf05e47d3g40hbvh99taducat83ocgpwthe7xyrz0iy81rf&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                attractive:
+                    "https://media.giphy.com/media/2AnO9TLfVB5hRaJR0m/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                caring:
+                    "https://media.giphy.com/media/HKZSS9D45uAAilnv6q/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                athletic:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGJocmdpYmI2b3AxZXg4aXJtYjRyZHlxeWlyZ2R1dGl3d2RhdWdveCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/BAS4Iv3np9e2vzpaQ8/giphy.gif",
+                loyal:
+                    "https://media.giphy.com/media/1fbfaKhhJxXqbqiXWO/giphy.gif?cid=ecf05e47r0h02clwonpzob159gn7501eagejzlgn8ydkfdhl&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                sencere:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnFybWVzOG5xdjk5M2x0eDYxN3Ruc2F0djZzbXcxaTB1eHFnN3VsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/25688FI5AUUVf04upZ/giphy.gif",
+                cute: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Qxd2ljNm42cmJ4eW9ubHk0Z2V2cHJveWFuOHNyM201c2h1NGJ5NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RlhbpcHWRfN5pSAq8h/giphy.gif",
+                unique:
+                    "https://media.giphy.com/media/kCFBvgBOxRXvcMIL4p/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                smart:
+                    "https://media.giphy.com/media/3cwLpdCalQrML78gbe/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                funny:
+                    "https://media.giphy.com/media/as7WFekxezydhXITfW/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                honest:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnFybWVzOG5xdjk5M2x0eDYxN3Ruc2F0djZzbXcxaTB1eHFnN3VsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/25688FI5AUUVf04upZ/giphy.gif",
+                magnetic:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGJocmdpYmI2b3AxZXg4aXJtYjRyZHlxeWlyZ2R1dGl3d2RhdWdveCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/BAS4Iv3np9e2vzpaQ8/giphy.gif",
+                understanding:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHIxZWdxbHNkdXVpNDB4MWhzdHN4dXdvYnVlZG01cGpsOXo2YmZpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sJo0bJ84AAcNSbNm6N/giphy.gif",
+                charismatic:
+                    "https://media.giphy.com/media/2AnO9TLfVB5hRaJR0m/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                passionate:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNmZWR1eXNkM21nbXo4NnRhb3BzNDl5bjAzNW85dTV5bXFxNHo0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xrHhTCDe7AI3VpTYGC/giphy.gif",
+                supportive:
+                    "https://media.giphy.com/media/HKZSS9D45uAAilnv6q/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                respectful:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNndGpmcDd5dWk2cXNsenQwdWpzMWJ4MjE2a3g0ejljODd5NWtmZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7y4Nc95399hsr24oYc/giphy.gif",
+                lovely:
+                    "https://media.giphy.com/media/kdziwLPfMNkfpvuZx9/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                friendly:
+                    "https://media.giphy.com/media/as7WFekxezydhXITfW/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                inspiring:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZ6OXFod21xODM1ZWdyY3N4OXd0aGNyaGZkYWwydmliN2xmcTU0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xZn6QSIyPKNpaTbGa2/giphy.gif",
+                polite:
+                    "https://media.giphy.com/media/1fbfaKhhJxXqbqiXWO/giphy.gif?cid=ecf05e47r0h02clwonpzob159gn7501eagejzlgn8ydkfdhl&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                grateful:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNndGpmcDd5dWk2cXNsenQwdWpzMWJ4MjE2a3g0ejljODd5NWtmZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7y4Nc95399hsr24oYc/giphy.gif",
+                intelligent:
+                    "https://media.giphy.com/media/ZiT4BATmuZ5brqUxvb/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                talented:
+                    "https://media.giphy.com/media/kdziwLPfMNkfpvuZx9/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                energetic:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGZ6MzYwZmtoYnMybXdwdTUzd20yMXdlcm9zbnUzdmF6Zm05M20zYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Tr5lGBJnmBqUEZcpoP/giphy.gif",
+                comforting:
+                    "https://media.giphy.com/media/HKZSS9D45uAAilnv6q/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                empathetic:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHIxZWdxbHNkdXVpNDB4MWhzdHN4dXdvYnVlZG01cGpsOXo2YmZpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sJo0bJ84AAcNSbNm6N/giphy.gif",
+                patient:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzRrMWt6Zmk5OW52dzkyajVxbG9yaXQyc21zMjVib2E1OGcxdW1pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T0ph30SEe8W15fLHIU/giphy.gif",
+                handsome:
+                    "https://media.giphy.com/media/YO0zXMgEF0QwxUoa7E/giphy.gif?cid=ecf05e47d3g40hbvh99taducat83ocgpwthe7xyrz0iy81rf&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                kind: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Qxd2ljNm42cmJ4eW9ubHk0Z2V2cHJveWFuOHNyM201c2h1NGJ5NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RlhbpcHWRfN5pSAq8h/giphy.gif",
+                enthusiastic:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGZ6MzYwZmtoYnMybXdwdTUzd20yMXdlcm9zbnUzdmF6Zm05M20zYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Tr5lGBJnmBqUEZcpoP/giphy.gif",
+                wise: "https://media.giphy.com/media/3cwLpdCalQrML78gbe/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                trustworthy:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZ6OXFod21xODM1ZWdyY3N4OXd0aGNyaGZkYWwydmliN2xmcTU0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xZn6QSIyPKNpaTbGa2/giphy.gif",
+                brilliant:
+                    "https://media.giphy.com/media/kCFBvgBOxRXvcMIL4p/giphy.gif?cid=ecf05e47tow86hnjzr1imbu5si58z4cvjks9xkhy1qgk6ogb&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                thoughtful:
+                    "https://media.giphy.com/media/ZiT4BATmuZ5brqUxvb/giphy.gif?cid=ecf05e47e8fqg45kvnezpin7c2p9as5tla42xd9rwangybnx&ep=v1_gifs_related&rid=giphy.gif&ct=s",
+                tolerant:
+                    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzRrMWt6Zmk5OW52dzkyajVxbG9yaXQyc21zMjVib2E1OGcxdW1pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T0ph30SEe8W15fLHIU/giphy.gif",
+                love: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdndyZTc3aTQyaWd6cWU5M3Uzc3M2eTI1ODluZWNhdjB1ZWRlYTVnaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tshmvVDvKNmaXZ2fCN/giphy.gif",
+            };
+            document.getElementById('gifImage2').src = images[attribute];
+        }
+    </script>
+</body>
+
+</html>
