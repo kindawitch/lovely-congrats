@@ -3,14 +3,13 @@ body {
     font-family: "Noto Serif", serif;
     font-weight: 700;
     font-style: italic;
+    margin: 40px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 .text1 {
@@ -21,6 +20,8 @@ body {
 .text2 {
     font-size: 40px;
     color: #de8157;
+    margin-bottom: 20px;
+
 }
 
 .text3 {
@@ -61,8 +62,7 @@ body {
 .last-button {
     background-color: #de8157;
     color: white;
-    padding: 20px 330px;
-    margin: 0 10px;
+    padding: 2vh 33vh;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -80,15 +80,10 @@ body {
     cursor: pointer;
 }
 
-.image-container {
-    margin-top: 20px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 20px;
 }
 
 .grid button {
