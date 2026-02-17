@@ -38,6 +38,13 @@ body {
     color: #ffc7ba;
 }
 
+.blue-button:hover,
+.grid button:hover,
+.last-button:hover {
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
 .blue-button {
     background-color: #b1dbd7;
     color: #2a7b90;
@@ -50,15 +57,6 @@ body {
     text-decoration: none;
 }
 
-.pink-button {
-    background-color: #ffc7ba;
-    color: #de8157;
-    padding: 20px 40px;
-    margin: 0 10px;
-    border: 3px solid #ffc7ba;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .last-button {
     background-color: #de8157;
@@ -70,12 +68,6 @@ body {
     cursor: pointer;
     font-size: 25px;
     text-decoration: none;
-
-}
-
-.last-buttosn:hover {
-    transform: translateY(-1px) scale(1.05);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
 }
 
 .pressed-button {
@@ -86,11 +78,6 @@ body {
     border: 3px solid #ffc7ba;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.button:hover {
-    transform: translateY(-1px) scale(1.05);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
 }
 
 .image-container {
@@ -112,9 +99,4 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-}
-
-.grid button:hover {
-    transform: translateY(-1px) scale(1.05);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
 }
